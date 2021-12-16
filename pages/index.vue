@@ -1,7 +1,13 @@
 <template>
-  <Tutorial/>
+  <div>
+    {{ lol }}
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  asyncData() {
+    return { lol: 2 }
+  },
+}
 </script>
