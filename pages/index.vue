@@ -6,8 +6,12 @@
 
 <script>
 export default {
-  asyncData() {
-    return { lol: 2 }
+  async asyncData({ $axios }) {
+    const data = await $axios.$get(
+      'https://jsonplaceholder.typicode.com/todos/1'
+    )
+    console.log(data)
+    return { lol: data }
   },
 }
 </script>
