@@ -5,3 +5,6 @@
 .nuxt-link-active {
   @apply font-medium text-primary-500;
 }
+* {
+  -webkit-tap-highlight-color: transparent;
+}

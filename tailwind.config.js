@@ -10,6 +10,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
+          200: "#66ecec",
+          300: "#1cd8d8",
           500: "#0bb0b0",
         },
         second: {
@@ -29,6 +31,7 @@ module.exports = {
     },
     fontFamily: {
       sans: "Proxima Nova, sans-serif",
+      mono: "Mont, monospace",
     },
   },
   plugins: [],

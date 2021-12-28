@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div class="grid grid-rows-[auto_1fr_auto] h-screen">
     <Header />
-    <Nuxt />
+    <main>
+      <Nuxt />
+    </main>
+    <Footer />
   </div>
 </template>
 

@@ -1,4 +1,5 @@
 export default {
+  target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Count4u",
@@ -19,7 +20,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/css/main.css", "~/assets/fonts/proxyma-nova/stylesheet.css"],
+  css: [
+    "@/assets/css/main.css",
+    "@/assets/css/vue-select.css",
+    "~/assets/fonts/proxyma-nova/stylesheet.css",
+    "~/assets/fonts/mont/stylesheet.css",
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -40,8 +46,31 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    // https://i18n.nuxtjs.org
+    "@nuxtjs/i18n",
   ],
-
+  i18n: {
+    strategy: "prefix",
+    langDir: "@/locales/",
+    defaultLocale: "en",
+    locales: [
+      {
+        code: "en",
+        ios: "en-US",
+        file: "en",
+      },
+      {
+        code: "ru",
+        ios: "ru-RU",
+        file: "ru",
+      },
+      {
+        code: "ua",
+        ios: "uk-UA",
+        file: "ua",
+      },
+    ],
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
