@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="z-50">
     <button class="px-1.5 py-2 rounded hover:bg-second-200/20 transition ease-out duration-300" @click="openSidebar">
       <svg width="22" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="0.5" y1="0.5" x2="23.5" y2="0.5" stroke="#3B3B47" stroke-linecap="round" />

@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          200: "#66ecec",
+          200: "#11cecf",
           300: "#1cd8d8",
           500: "#0bb0b0",
         },
@@ -23,6 +23,8 @@ module.exports = {
       },
     },
     screens: {
+      mn: "375px",
+      lt: "425px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
