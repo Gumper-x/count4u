@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[1000px] relative overflow-hidden">
+  <div class="relative overflow-hidden">
     <div class="2xl:px-40 lg:px-20 px-5 mt-20 lg:mb-64 hf:mb-52 md:mb-56 sm:mb-52 st:mb-56 lt:mb-32 mn:mb-32 ms:mb-48 mb-40">
       <h1
         class="font-mono xl:text-6xl lg:text-5xl sm:text-4xl text-3xl leading-tight text-second-500 xl:max-w-[925px] md:max-w-[740px] max-w-[550px]"
@@ -17,6 +17,9 @@
       <BaseButton class="mt-7">{{ $t("other.get_services") }}</BaseButton>
     </div>
     <TapeQuality />
+    <div class="2xl:px-40 lg:px-20 px-5 my-8">
+      <TargetBanner />
+    </div>
   </div>
 </template>
 
