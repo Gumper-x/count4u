@@ -13,4 +13,8 @@ export const other = {
   creatively: "Креативно",
   responsibly: "Відповідально",
   efficiently: "Ефективно",
+  target_banner_count: "Лідер у сфері аутсорсингу бухгалтерських, фінансових, юридичних послуг та послуг автоматизації",
+  target_banner_guarantee: "Гарантія якості виконаних робіт",
+  target_banner_confidentiality: "Конфіденційність даних",
+  target_banner_expert: "Доступ до кваліфікованого онлайн-консультування",
 };

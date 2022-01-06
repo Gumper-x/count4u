@@ -10,6 +10,8 @@
       ]"
       class="2xl:px-40 xl:px-20 px-5 bg-primary-700"
       :pagination-enabled="false"
+      autoplay
+      :loop="true"
     >
       <slide v-for="(item, index) in qualities" :key="index" class="text-primary-100 uppercase text-center py-3 px-3">
         {{ item }}
