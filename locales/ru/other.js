@@ -4,4 +4,13 @@ export const other = {
   legal: "Юридические услуги",
   automation: "Автоматизация",
   contact: "Контакты",
+  title_home: "Аутсорсинг бухгалтерских и финансовых услуг",
+  foreword_home: "Экономьте ваше время и расходы, развивая бизнес без отвлечения и потерь!",
+  get_services: "Получить консультацию",
+  professionally: "Профессионально",
+  comprehensively: "Комплексно",
+  quickly: "Быстро",
+  creatively: "Креативно",
+  responsibly: "Ответственно",
+  efficiently: "Эффективно",
 };

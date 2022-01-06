@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-rows-[auto_1fr_auto] h-screen">
+  <div class="grid grid-cols-1 grid-rows-[auto_1fr_auto] h-screen">
     <Header />
     <main>
       <Nuxt />
@@ -7,7 +7,3 @@
     <Footer />
   </div>
 </template>
-
-<script>
-  export default {};
-</script>

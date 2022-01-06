@@ -4,4 +4,13 @@ export const other = {
   legal: "Legal",
   automation: "Automation",
   contact: "Contacts",
+  title_home: "Accounting and financial services outsourcing",
+  foreword_home: "Save your time and costs by growing your business without distraction and loss!",
+  get_services: "To get a consultation",
+  professionally: "Professionally",
+  comprehensively: "Сomprehensively",
+  quickly: "Quickly",
+  creatively: "Creatively",
+  responsibly: "Responsibly",
+  efficiently: "Efficiently",
 };

@@ -1,6 +1,6 @@
 <template>
-  <header class="flex justify-between py-4 2xl:px-40 xl:px-20 lg:pl-8 lg:pr-6 px-5 items-center">
-    <div class="fixed right-4 bottom-0 bg-red-500 text-slate-50 px-3 py-1 rounded-t-lg">Режим Разработки</div>
+  <header class="flex justify-between py-4 2xl:px-40 xl:px-20 px-5 lg:pl-8 lg:pr-6 items-center">
+    <div class="fixed right-4 bottom-0 bg-red-500 text-slate-50 px-3 py-1 rounded-t-lg z-50">Режим Разработки</div>
     <div class="relative">
       <nuxt-link :to="localePath('/')">
         <img :src="require('@/assets/icon/logo.svg')" alt="Logo" />
