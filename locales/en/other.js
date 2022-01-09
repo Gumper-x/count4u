@@ -3,6 +3,7 @@ export const other = {
   finance: "Finance",
   legal: "Legal",
   automation: "Automation",
+  prices: "Prices",
   contact: "Contacts",
   title_home: "Accounting and financial services outsourcing",
   foreword_home: "Save your time and costs by growing your business without distraction and loss!",
@@ -17,4 +18,14 @@ export const other = {
   target_banner_guarantee: "Quality assurance of work performed",
   target_banner_confidentiality: "Data confidentiality",
   target_banner_expert: "Access to qualified online consulting",
+  why_us: "Why us",
+  why_us_professional_team: "Count4U - is a professional team with many years of experience",
+  why_us_quickly: "We quickly solve your routine issues",
+  why_us_keep_records:
+    "We keep records with the Client from the position of a business owner, evaluate the work of the company, give the opportunity to optimize processes and the tax burden",
+  why_us_creative: "We have creative thinking, we work outside the box, because our clients' business works 24/7!",
+  why_us_save: "We save you time and costs, and you grow your business without distraction and loss!",
+  services: "Services",
+  info: "Info",
+  all_rights_reserved: "© 2021. Consulting group «Count4U». All rights reserved",
 };

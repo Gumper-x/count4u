@@ -4,6 +4,6 @@
     <main>
       <Nuxt />
     </main>
-    <Footer />
+    <Footer class="mt-12" />
   </div>
 </template>

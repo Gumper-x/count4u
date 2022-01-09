@@ -2,9 +2,7 @@
   <header class="flex justify-between py-4 2xl:px-40 xl:px-20 px-5 lg:pl-8 lg:pr-6 items-center">
     <div class="fixed right-4 bottom-0 bg-red-500 text-slate-50 px-3 py-1 rounded-t-lg z-50">Режим Разработки</div>
     <div class="relative">
-      <nuxt-link :to="localePath('/')">
-        <img :src="require('@/assets/icon/logo.svg')" alt="Logo" />
-      </nuxt-link>
+      <Logo class="!text-second-500" />
       <img
         class="absolute top-[-24px] left-[-173px] max-w-fit -z-10 select-none"
         :src="require('@/assets/icon/logo-line.svg')"
@@ -13,7 +11,7 @@
     </div>
     <nav class="lg:flex hidden items-center">
       <ul class="flex grow justify-end">
-        <li v-for="(item, index) in menu" :key="index" class="xl:px-6 px-4">
+        <li v-for="(item, index) in menu" :key="index" class="xl:px-6 px-3">
           <nuxt-link
             class="block h-full text-second-500 hover:text-primary-500 transition-[color] ease-in-out"
             :to="localePath(item.path)"
@@ -74,6 +72,10 @@
           {
             text: this.$t("other.automation"),
             path: "automation",
+          },
+          {
+            text: this.$t("other.prices"),
+            path: "prices",
           },
           {
             text: this.$t("other.contact"),

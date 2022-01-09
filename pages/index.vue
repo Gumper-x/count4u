@@ -17,9 +17,11 @@
       <BaseButton class="mt-7">{{ $t("other.get_services") }}</BaseButton>
     </div>
     <TapeQuality />
-    <div class="2xl:px-40 lg:px-20 px-5 my-8">
+    <div class="2xl:px-40 lg:px-20 px-5 my-16">
       <TargetBanner />
+      <WhyUs class="mt-20" />
     </div>
+    <Dignity />
   </div>
 </template>
 
