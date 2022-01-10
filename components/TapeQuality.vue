@@ -22,11 +22,6 @@
 
 <script>
   export default {
-    data() {
-      return {
-        swiper: null,
-      };
-    },
     computed: {
       qualities() {
         return [
@@ -37,12 +32,6 @@
           this.$t("other.responsibly"),
           this.$t("other.efficiently"),
         ];
-      },
-    },
-    mounted() {},
-    methods: {
-      someLocalProperty() {
-        console.log(2);
       },
     },
   };

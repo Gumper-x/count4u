@@ -22,6 +22,9 @@
       <WhyUs class="mt-20" />
     </div>
     <Dignity />
+    <Team class="mt-20" />
+    <Process class="mt-20" />
+    <Reviews class="mt-20" />
   </div>
 </template>
 
