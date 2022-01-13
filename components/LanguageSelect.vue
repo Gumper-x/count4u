@@ -12,8 +12,6 @@
   // Lib
   import vSelect from "vue-select";
   import OpenIndicator from "@/components/Icons/OpenIndicator";
-  // Utils
-  import { capitalize } from "@/utils";
   vSelect.props.components.default = () => ({ OpenIndicator });
 
   export default {
@@ -25,14 +23,14 @@
     },
     computed: {
       currentLocale() {
-        return capitalize(this.$i18n.locale);
+        return this.$i18n.locale.toUpperCase();
       },
       availableLocales() {
         return this.$i18n.locales;
       },
       optionsLocales() {
         return this.availableLocales.map((lang) => ({
-          label: capitalize(lang.code),
+          label: lang.code.toUpperCase(),
           value: lang.ios,
         }));
       },
