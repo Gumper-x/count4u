@@ -8,3 +8,7 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+.list-element::before {
+  content: "";
+  @apply block min-w-[0.8rem] min-h-[0.8rem] bg-second-200 rounded-sm mr-4;
+}
