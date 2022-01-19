@@ -27,5 +27,5 @@ export const other = {
   why_us_save: "We save you time and costs, and you grow your business without distraction and loss!",
   services: "Services",
   info: "Info",
-  all_rights_reserved: "© 2021. Consulting group «Count4U». All rights reserved",
+  all_rights_reserved: "© {date}. Consulting group «Count4U». All rights reserved",
 };

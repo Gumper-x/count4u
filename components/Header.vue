@@ -35,7 +35,7 @@
       <a
         class="ml-4 text-second-200 hover:text-second-300 transition ease-in-out"
         target="_blank"
-        href="https://www.instagram.com/count.4u"
+        href="https://www.facebook.com/Count4U-103905131935773"
       >
         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
           <path

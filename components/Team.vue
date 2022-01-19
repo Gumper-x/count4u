@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:px-40 xl:px-20 px-5">
+  <div class="relative 2xl:px-40 xl:px-20 px-5">
     <h3 class="font-mono text-3xl text-second-500 mb-16">Видение, миссия, ценности</h3>
     <client-only>
       <carousel
@@ -30,6 +30,7 @@
         </slide>
       </carousel>
     </client-only>
+    <span class="absolute top-0 left-0 w-full h-full gradient-ellipse -z-10"></span>
   </div>
 </template>
 

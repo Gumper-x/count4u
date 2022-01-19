@@ -6,7 +6,7 @@
       <a
         class="text-second-200 hover:text-second-300 transition ease-in-out"
         target="_blank"
-        href="https://www.instagram.com/count.4u"
+        href="https://www.facebook.com/Count4U-103905131935773"
       >
         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -69,7 +69,9 @@
     </div>
     <div class="flex flex-col md:col-span-1 md:row-span-2 md:justify-end col-span-2 items-end">
       <Logo class="!text-white" />
-      <span class="py-1 text-second-400 text-right">{{ $t("other.all_rights_reserved") }}</span>
+      <span class="py-1 text-second-400 text-right">
+        {{ $t("other.all_rights_reserved", { date: new Date().getFullYear() }) }}
+      </span>
     </div>
   </footer>
 </template>
