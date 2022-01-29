@@ -15,8 +15,8 @@
         :loop="true"
       >
         <slide v-for="(item, index) in team" :key="index" class="flex justify-center px-3">
-          <div class="bg-second-100 flex flex-col rounded-3xl py-6 px-8 max-w-[26rem] min-h-[27rem]">
-            <h2 class="font-semibold text-center text-primary-500 text-xl mt-2">{{ item.title }}</h2>
+          <div class="bg-second-100 flex flex-col rounded-3xl py-10 px-8 max-w-[26rem]">
+            <h2 class="font-semibold text-center text-primary-500 text-xl">{{ item.title }}</h2>
             <ul class="flex flex-col gap-4 mt-2">
               <li
                 v-for="(listItem, listIndex) in item.list"

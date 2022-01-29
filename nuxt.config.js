@@ -1,22 +1,27 @@
 export default {
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: "Count4u",
-    htmlAttrs: {
-      lang: "en",
-    },
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Бухгалтерский учет" },
-      { name: "format-detection", content: "telephone=no" },
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "apple-touch-icon", type: "image/x-icon", href: "/favicon.ico" },
-    ],
+  head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    return {
+      title: "Count4u",
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs,
+      },
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { hid: "description", name: "description", content: "Бухгалтерский учет" },
+        { name: "format-detection", content: "telephone=no" },
+        ...i18nHead.meta,
+      ],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "apple-touch-icon", type: "image/x-icon", href: "/favicon.ico" },
+        ...i18nHead.link,
+      ],
+    };
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -55,17 +60,17 @@ export default {
     locales: [
       {
         code: "en",
-        ios: "en-US",
+        iso: "en-US",
         file: "en",
       },
       {
         code: "ru",
-        ios: "ru-RU",
+        iso: "ru-RU",
         file: "ru",
       },
       {
         code: "ua",
-        ios: "uk-UA",
+        iso: "uk-UA",
         file: "ua",
       },
     ],

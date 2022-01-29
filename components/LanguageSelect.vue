@@ -31,7 +31,7 @@
       optionsLocales() {
         return this.availableLocales.map((lang) => ({
           label: lang.code.toUpperCase(),
-          value: lang.ios,
+          value: lang.iso,
         }));
       },
     },
