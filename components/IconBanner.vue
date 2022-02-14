@@ -8,7 +8,7 @@
         <img class="object-contain h-full" :src="emoji ? require(`@/assets/emoji/${emoji}.png`) : ''" :alt="emoji" />
       </div>
     </div>
-    <Banner class="bg-second-100 w-full max-w-4xl min-h-[28rem] py-12 md:px-16 px-8">
+    <Banner class="bg-second-100 w-full max-w-4xl min-h-[18rem] py-12 md:px-16 px-8">
       <ul class="flex flex-col gap-3">
         <li
           v-for="(item, index) in list"
