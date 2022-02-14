@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:px-40 xl:px-20 px-5 bg-primary-700 py-28">
-    <h3 class="font-mono text-2xl text-white">Процесс работы</h3>
+    <h3 class="font-mono text-2xl text-white">{{ $t("other.process") }}</h3>
     <ul class="flex mt-12 items-end hf:flex-row flex-col relative hf:h-auto h-[36rem]">
       <li
         v-for="(item, index) in process"
@@ -23,13 +23,13 @@
             v-if="index === 0"
             class="hf:hidden md:w-[20rem] sm:w-[19rem] st:w-[13rem] mn:w-[16rem] w-[13rem] text-primary-100 mt-2"
           >
-            Оставляйте заявку на нашем сайте, в чате или по телефонам, указанным на сайте
+            {{ $t("other.process_hint") }}
           </p>
         </div>
       </li>
     </ul>
     <p class="hf:block hidden text-primary-100 max-w-[20rem] w-full mt-6">
-      Оставляйте заявку на нашем сайте, в чате или по телефонам, указанным на сайте
+      {{ $t("other.process_hint") }}
     </p>
   </div>
 </template>
@@ -38,7 +38,7 @@
   export default {
     computed: {
       process() {
-        return ["Заявка", "Консультация", "Договор", "Предоставление услуг"];
+        return this.$t("other.process_list");
       },
     },
   };

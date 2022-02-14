@@ -16,19 +16,19 @@
         return [
           {
             head: "12",
-            body: "Лет успешного опыта",
+            body: this.$t("other.success_dignity"),
           },
           {
             head: "340",
-            body: "Зарегестировано ФЛП",
+            body: this.$t("other.registered_dignity"),
           },
           {
             head: "1240",
-            body: "Юрлиц открыто",
+            body: this.$t("other.legal_dignity"),
           },
           {
             head: "94%",
-            body: "Клиентов реккомендуют нас коллегам и партнерам",
+            body: this.$t("other.recommend_dignity"),
           },
         ];
       },
