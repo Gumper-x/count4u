@@ -2,26 +2,27 @@ export default {
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head() {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
-    return {
+    const i18nHead = this.$nuxtI18nHead ? this.$nuxtI18nHead({ addSeoAttributes: true }) : null;
+    const headMeta = {
       title: "Count4u",
-      htmlAttrs: {
-        ...i18nHead.htmlAttrs,
-      },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { hid: "description", name: "description", content: "Бухгалтерский учет" },
         { name: "format-detection", content: "telephone=no" },
-        ...i18nHead.meta,
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "apple-touch-icon", type: "image/x-icon", href: "/favicon.ico" },
-        ...i18nHead.link,
       ],
     };
+    if (i18nHead) {
+      headMeta.htmlAttrs = { ...headMeta.htmlAttrs, ...i18nHead.htmlAttrs };
+      headMeta.htmlAttrs = { ...headMeta.meta, ...i18nHead.meta };
+      headMeta.htmlAttrs = { ...headMeta.link, ...i18nHead.link };
+    }
+    return headMeta;
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
