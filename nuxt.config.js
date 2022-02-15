@@ -19,8 +19,8 @@ export default {
     };
     if (i18nHead) {
       headMeta.htmlAttrs = { ...headMeta.htmlAttrs, ...i18nHead.htmlAttrs };
-      headMeta.htmlAttrs = { ...headMeta.meta, ...i18nHead.meta };
-      headMeta.htmlAttrs = { ...headMeta.link, ...i18nHead.link };
+      headMeta.meta = [...headMeta.meta, ...i18nHead.meta];
+      headMeta.link = [...headMeta.link, ...i18nHead.link];
     }
     return headMeta;
   },
