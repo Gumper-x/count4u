@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:px-40 xl:px-20 px-5">
-    <h2 class="font-mono text-2xl text-second-500 mb-12">Весь спектр юридических консультаций</h2>
+    <h2 class="font-mono text-2xl text-second-500 mb-12">{{ $t("other.legal_title") }}</h2>
     <div class="flex flex-col gap-20">
       <IconBanner
         v-for="(item, index) in legals"

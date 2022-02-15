@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:px-40 xl:px-20 px-5">
-    <h2 class="font-mono text-2xl text-second-500 mb-12">Услуги бухгалтерского и налогового учета</h2>
+    <h2 class="font-mono text-2xl text-second-500 mb-12">{{ $t("other.account_title") }}</h2>
     <div class="flex flex-col gap-20">
       <IconBanner
         v-for="(item, index) in accounts"
@@ -20,62 +20,34 @@
       accounts() {
         return [
           {
-            title: "Заработная плата",
+            title: this.$t("other.account_salary"),
             icon: "money-bag",
-            list: [
-              "Расчет заработной платы",
-              "Расчет больничных, отпускных, компенсационных выплат сотрудников",
-              "Контроль за своевременностью выплаты заработной платы и уплаты налогов",
-              "Подача отчетности",
-            ],
+            list: this.$t("other.account_salary_list"),
           },
           {
-            title: "Кадровый учет и делопроизводство",
+            title: this.$t("other.account_personnel"),
             icon: "books",
-            list: [
-              "Ведение кадровой документации",
-              "Военный учет",
-              "Штатное расписание",
-              "Персональные карты и трудовые книги",
-              "Подача кадровой отчетности ",
-            ],
+            list: this.$t("other.account_personnel_list"),
           },
           {
-            title: "Учет хозяйственных операций",
+            title: this.$t("other.account_transaction"),
             icon: "package",
-            list: [
-              "Подготовка и систематизация первичных документов",
-              "Внесение в базу 1С",
-              "Ведение складского учета",
-              "Списание материалов",
-              "Взаиморасчеты с контрагентами",
-            ],
+            list: this.$t("other.account_transaction_list"),
           },
           {
-            title: "Учет НДС",
+            title: this.$t("other.account_vta"),
             icon: "coin",
-            list: [
-              "Регистрация налоговых накладных",
-              "Учет в системе 1С",
-              "Контроль в электронной системе",
-              "Формирование декларации",
-            ],
+            list: this.$t("other.account_vta_list"),
           },
           {
-            title: "Подача отчетности",
+            title: this.$t("other.account_reporting"),
             icon: "page-facing-up",
-            list: ["Закрытие финансового периода", "Формирование и подача всех видов отчетности, требуемых заказчиком"],
+            list: this.$t("other.account_reporting_list"),
           },
           {
-            title: "Услуги для ФЛП",
+            title: this.$t("other.account_flp"),
             icon: "technologist",
-            list: [
-              "Ведение книги доходов/расходов",
-              "Расчет налогов",
-              "Формирование и представление отчетности",
-              "Коммуникация с налоговым органом",
-              "Консультационные услуги по деятельности ФЛП",
-            ],
+            list: this.$t("other.account_flp_list"),
           },
         ];
       },

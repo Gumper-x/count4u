@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:px-40 xl:px-20 px-5">
-    <h2 class="font-mono text-2xl text-second-500 mb-12">Весь спектр финансовых услуг</h2>
+    <h2 class="font-mono text-2xl text-second-500 mb-12">{{ $t("other.finance_title") }}</h2>
     <div class="flex flex-col gap-20">
       <IconBanner
         v-for="(item, index) in accounts"
@@ -20,37 +20,19 @@
       accounts() {
         return [
           {
-            title: "Финансовый директор онлайн",
+            title: this.$t("other.finance_cfo"),
             icon: "money-with-wings",
-            list: [
-              "Формирование и анализ финансовой отчетности",
-              "Анализ финансовых показателей",
-              "Финансовое моделирование",
-              "Консультации по работе с банками и финансовыми учреждениями",
-              "Привлечение финансирования",
-              "Сопровождение переговоров",
-              "Другое",
-            ],
+            list: this.$t("other.finance_cfo_list"),
           },
           {
-            title: "Управленческий учет",
+            title: this.$t("other.finance_management"),
             icon: "bookmark-tabs",
-            list: [
-              "Внедрение оперативного и управленческого учета с «0»",
-              "Автоматизация процесса с целью контроля расходования материальных ресурсов",
-              "Экономический и юридический аудит",
-              "Формирование ключевых аналитических отчетов для владельца",
-            ],
+            list: this.$t("other.finance_management_list"),
           },
           {
-            title: "Планирование и бюджетирование",
+            title: this.$t("other.finance_management"),
             icon: "euro-banknote",
-            list: [
-              "Организация системы планирования на предприятии",
-              "Внедрение системы бюджетирования",
-              "Налоговое планирование",
-              "План-фактный анализ",
-            ],
+            list: this.$t("other.finance_management_list"),
           },
         ];
       },
